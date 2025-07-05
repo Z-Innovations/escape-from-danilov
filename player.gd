@@ -8,8 +8,12 @@ const gravity = 400
 @export var sprite: Sprite2D
 @export var collision: CollisionShape2D
 
+const defaultCollisionShape = Vector2(124.0, 360.0)
+const defaultCollisionPosition = Vector2(-1.0, -1.0)
+const duckCollisionShape = Vector2(119.5, 199.0)
+const duckCollisionPosition = Vector2(-2.75, 78.5)
+
 @export var duckSprite: Sprite2D
-@export var duckCollision: CollisionShape2D
 
 func _physics_process(delta: float):
 	if Input.is_action_pressed("player_left"):
@@ -28,13 +32,13 @@ func _physics_process(delta: float):
 	if Input.is_action_pressed("player_duck"):
 		sprite.visible = false
 		duckSprite.visible = true
-		collision.disabled = true
-		duckCollision.disabled = false
+		collision.shape.set_size(duckCollisionShape)
+		collision.position = duckCollisionPosition
 	elif Input.is_action_just_released("player_duck"):
 		sprite.visible = true
 		duckSprite.visible = false
-		collision.disabled = false
-		duckCollision.disabled = true
+		collision.shape.set_size(defaultCollisionShape)
+		collision.position = defaultCollisionPosition
 	
 	move_and_slide()
 	
