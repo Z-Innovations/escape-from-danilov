@@ -35,3 +35,11 @@ texture = ExtResource("3_i3pqv")
 position = Vector2(-2.75, 78.5)
 shape = SubResource("RectangleShape2D_hqtel")
 disabled = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.15
+drag_right_margin = 0.15
+drag_bottom_margin = 0.15
