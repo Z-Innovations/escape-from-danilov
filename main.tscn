@@ -1,0 +1,68 @@
+[gd_scene load_steps=4 format=3 uid="uid://bd3xy2s2e2a7w"]
+
+[ext_resource type="PackedScene" uid="uid://c87nfw005jlbr" path="res://bg.tscn" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://bnxpl36x08trx" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://3cax3841cqoh" path="res://platform.tscn" id="2_0xm2m"]
+
+[node name="main" type="Node2D"]
+position = Vector2(32, 344)
+
+[node name="bg" parent="." instance=ExtResource("1_h2yge")]
+position = Vector2(536, -24)
+
+[node name="Player" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(16, 0)
+
+[node name="platform" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(0, 232)
+
+[node name="platform2" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(104, 232)
+
+[node name="platform3" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(208, 232)
+
+[node name="platform4" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(312, 232)
+
+[node name="platform5" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(416, 232)
+
+[node name="platform6" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(520, 232)
+
+[node name="platform7" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(624, 184)
+
+[node name="platform8" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(728, 184)
+
+[node name="platform9" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(832, 184)
+
+[node name="platform10" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(864, -24)
+
+[node name="platform11" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(968, -24)
+
+[node name="platform12" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(1072, -24)
+
+[node name="platform13" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(392, -136)
+
+[node name="platform14" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(496, -136)
+
+[node name="platform15" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(600, -136)
+
+[node name="platform16" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(0, -336)
+
+[node name="platform17" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(104, -336)
+
+[node name="platform18" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(208, -336)

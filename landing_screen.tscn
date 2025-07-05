@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cu8ijadbbyqoc"]
+
+[ext_resource type="Texture2D" uid="uid://b6guokr0ocv3m" path="res://sprites/play.jpg" id="1_7onfe"]
+[ext_resource type="Script" uid="uid://dyqt553m4fqt0" path="res://landing_screen.gd" id="1_y8h0w"]
+
+[node name="LandingScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y8h0w")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 160.0
+offset_right = 1692.0
+offset_bottom = 960.0
+scale = Vector2(0.25, 0.25)
+texture_normal = ExtResource("1_7onfe")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
