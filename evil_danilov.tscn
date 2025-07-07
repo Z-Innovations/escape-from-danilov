@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8tt6lodpxlpr"]
+
+[ext_resource type="Script" uid="uid://pefwev5nvolb" path="res://evil_danilov.gd" id="1_jmqlq"]
+[ext_resource type="Texture2D" uid="uid://dftwq6l2j1t87" path="res://sprites/IMG_0698.PNG.png" id="1_p2cja"]
+[ext_resource type="Texture2D" uid="uid://dwna4r8psv6vy" path="res://sprites/player_duck.png" id="2_jmqlq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x53hx"]
+size = Vector2(124, 360)
+
+[node name="EvilDanilov" type="CharacterBody2D"]
+script = ExtResource("1_jmqlq")
+
+[node name="sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_p2cja")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -1)
+shape = SubResource("RectangleShape2D_x53hx")
+
+[node name="PlayerDuck" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, 75)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_jmqlq")

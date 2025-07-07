@@ -17,6 +17,8 @@ duckSprite = NodePath("PlayerDuck")
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_4flbx")
 
+[node name="Marker2D" type="Marker2D" parent="sprite"]
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -1)
 shape = SubResource("RectangleShape2D_onrkg")

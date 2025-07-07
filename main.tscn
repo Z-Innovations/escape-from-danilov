@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bd3xy2s2e2a7w"]
+[gd_scene load_steps=7 format=3 uid="uid://bd3xy2s2e2a7w"]
 
 [ext_resource type="PackedScene" uid="uid://c87nfw005jlbr" path="res://bg.tscn" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://bnxpl36x08trx" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://3cax3841cqoh" path="res://platform.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://b0lwn5xiu7cja" path="res://js.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://cb7qk5lgtys5y" path="res://finish.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://c8tt6lodpxlpr" path="res://evil_danilov.tscn" id="6_7mycd"]
 
 [node name="main" type="Node2D"]
 position = Vector2(32, 344)
@@ -13,7 +14,7 @@ position = Vector2(32, 344)
 position = Vector2(536, -24)
 
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(16, 0)
+position = Vector2(232, 8)
 
 [node name="platform" parent="." instance=ExtResource("2_0xm2m")]
 position = Vector2(0, 232)
@@ -75,3 +76,7 @@ position = Vector2(520, 152)
 [node name="finish" parent="." instance=ExtResource("5_lquwl")]
 position = Vector2(8, -448)
 scale = Vector2(0.6, 0.6)
+
+[node name="EvilDanilov" parent="." node_paths=PackedStringArray("player") instance=ExtResource("6_7mycd")]
+position = Vector2(16, 0)
+player = NodePath("../Player")
