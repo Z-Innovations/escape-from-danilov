@@ -71,7 +71,7 @@ position = Vector2(104, -336)
 position = Vector2(208, -336)
 
 [node name="js" parent="." instance=ExtResource("4_1bvp3")]
-position = Vector2(520, 152)
+position = Vector2(528, 168)
 
 [node name="finish" parent="." instance=ExtResource("5_lquwl")]
 position = Vector2(8, -448)
